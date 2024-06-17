@@ -9,3 +9,28 @@ body{
     width: 100vh;
 
 }
+.segundo{
+    height: 60vh;
+    width: 60vw;
+
+}
+.terceiro{
+
+    height: 60vh;
+    width: 60vw;
+
+}
+.cprimeiro{
+    height: 80vh;
+    width: 60vw;
+
+
+}
+@media (max-width: 768px) {
+    img{
+        height: 200px;
+        width: 200px;
+    }
+}
+
+

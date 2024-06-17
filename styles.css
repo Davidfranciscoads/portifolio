@@ -70,3 +70,18 @@ a:hover{
 margin-top: 50px;
 
 }
+
+@media (min-width: 768px) {
+    .site {
+        flex-direction: row; /* Layout em linha em telas maiores */
+    }
+
+    .menuLateral {
+        width: 20%; /* Largura do menu lateral em telas maiores */
+    }
+
+    .imagemSenai {
+        width: 80%; /* Largura do conteúdo principal */
+    }
+}
+

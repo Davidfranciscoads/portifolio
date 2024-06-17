@@ -6,6 +6,87 @@
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
+<style>
+* {
+    margin: 0;
+    box-sizing: border-box; /* Garante que padding e border não aumentem o tamanho do elemento */
+}
+
+body {
+    background-image: url(matrix.jpg);
+    background-size: cover; /* Para cobrir todo o background */
+    font-family: Arial, sans-serif; /* Definindo uma fonte padrão */
+    padding: 0;
+    margin: 0;
+}
+
+.site {
+    display: flex;
+    flex-direction: column; /* Em telas menores, muda para coluna */
+    height: 100vh;
+}
+
+.menuLateral {
+    background-color: rgba(67, 110, 58, 0.925);
+    width: 100%;
+    max-width: 300px; /* Largura máxima do menu lateral */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+}
+
+.menuLateral h1 {
+    font-size: 1.5em; /* Tamanho do título */
+}
+
+.menuLateral img.foto_logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+nav {
+    margin-top: 20px; /* Espaçamento superior para o menu */
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none; /* Remove sublinhado */
+    display: block; /* Transforma o link em bloco */
+    padding: 10px 0; /* Espaçamento interno vertical */
+}
+
+nav a:hover {
+    color: red;
+}
+
+.imagemSenai {
+    display: flex;
+    justify-content: center;
+    max-width: 100%; /* Imagem não ultrapassa o contêiner */
+}
+
+.senai {
+    width: 80vh;
+    height: 20vh;
+}
+
+@media (min-width: 768px) {
+    .site {
+        flex-direction: row; /* Layout em linha em telas maiores */
+    }
+
+    .menuLateral {
+        width: 20%; /* Largura do menu lateral em telas maiores */
+    }
+
+    .imagemSenai {
+        width: 80%; /* Largura do conteúdo principal */
+    }
+}
+
+
+</style>
 <body>
     <div class="site">
         <div class="menuLateral">
@@ -15,7 +96,7 @@
                 <a href="c++.html" target="_blank">Automação industrial</a>
                 <a href="java.html" target="_blank">Linguagem de programação</a>
                 <a href="banco.html" target="_blank" >Banco de dados</a>
-                <a href="phyton"target="_blank">Ciencia de dados</a>
+                <a href="ciencia.html"target="_blank">Ciencia de dados</a>
                 <a href="script.html"target="_blank">Desenvolvimento web</a>
 
             
